@@ -1,0 +1,6 @@
+<h2>Lista de Personajes</h2>
+<ul>
+  <li *ngFor="let character of characters">
+    <a [routerLink]="['/character', character.id]">{{ character.name }}</a>
+  </li>
+</ul>

@@ -1,0 +1,13 @@
+<div *ngIf="spells.length > 0; else noSpells">
+    <h2>Lista de Hechizos</h2>
+    <ul>
+      <li *ngFor="let spell of spells">
+        <strong>{{ spell.name }}</strong>: {{ spell.description }}
+      </li>
+    </ul>
+  </div>
+  
+  <ng-template #noSpells>
+    <p>No se encontraron hechizos.</p>
+  </ng-template>
+  

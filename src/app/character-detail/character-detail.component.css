@@ -1,0 +1,100 @@
+/* Estilos generales */
+div {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+    padding: 20px;
+    background-color: #f4f4f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    color: #4A90E2;
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+  
+  h3 {
+    color: #333;
+    margin-top: 20px;
+    font-size: 1.5em;
+  }
+  
+  p {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+  }
+  
+  strong {
+    color: #333;
+  }
+  
+  /* Imagen del personaje */
+  img {
+    border-radius: 10px;
+    width: 200px;
+    height: auto;
+    margin-right: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Estilo para la lista de nombres alternativos */
+  ul {
+    padding-left: 20px;
+  }
+  
+  li {
+    margin-bottom: 5px;
+    list-style-type: disc;
+  }
+  
+  /* Enlace o texto cuando no se encuentra el personaje */
+  div *ngIf="!character" {
+    text-align: center;
+    font-size: 1.3em;
+    color: #e74c3c;
+  }
+  
+  /* Estilos para los títulos */
+  h2, h3 {
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  /* Contenedor principal */
+  .character-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  /* Sección de datos y detalles */
+  .character-details {
+    max-width: 60%;
+  }
+  
+  .character-details p {
+    margin-bottom: 10px;
+  }
+  
+  .character-image {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilo de la lista de nombres alternativos */
+  ul {
+    padding: 0;
+    list-style-type: none;
+    margin-top: 10px;
+  }
+  
+  li {
+    background-color: #eef2f3;
+    padding: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+  }
+  
